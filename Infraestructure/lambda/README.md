@@ -1,4 +1,3 @@
-You can add here all lambda functions & required files.
 
 Las funciones son completamente funcionales y estan listas para desplegar.
 
@@ -14,3 +13,12 @@ ejecutando curl a los end points de listtask y createtask testearemos estas lamb
 ` curl http://localhost:4566/restapis/`${IDAPI}`/stage/_user_request_/listtask`
 
 la lambda executeScheduleTask.py se ejecuta cada minuto y actualiza un bucket de S3 con un archivo de texto plano
+
+Mejoras a futuro:
+    Hacer que executeScheduledTask.py actualice las funciones si hiciera falta.
+    Configurar mas mensajes de https (400, 500, etc) para tratar los diferentes eventos
+
+## LAMBDAS
+    1. createScheduledTask.py
+    2. executeScheduledTask.py
+    3. listScheduledTask.py
